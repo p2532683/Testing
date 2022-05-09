@@ -1,0 +1,9 @@
+:root {
+  --background: #242F41;
+  --backgroundText: #151C28;
+  --main-bag-color: rgb(255,255,255);
+    --main-bag-color-grad: radial-gradient(circle, rgba(255,255,255,1) 16%, rgba(200,200,200,1) 79%, rgba(153,153,153,1) 94%);
+  --font_color1: #fff;
+  --font_color2: rgb(0, 0, 0); 
+   
+}
