@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+}
+.opening {
+    background-color: #151C28;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;  
+}
+.background {
+    background-color: #151C28;
+    width: 100%;
+    height: 100%;
+}
+.yellow {
+    position: absolute;
+    background-color: #CCCC30;
+    width: 100vw;
+    height: 120vh;
+    top: 90%;
+    border-radius: 35px;
+    box-shadow: 0px -1px 7px #CCCC30;
+    transition: top 0.5s;
+}
+.orange {
+    position: absolute;
+    background-color: #FF9C4B;
+    width: 100vw;
+    height: 120vh;
+    top: 101%;
+    border-radius: 35px;
+    box-shadow: 0px -1px 7px #FF9C4B;
+    transition: top 0.5s;
+}
+.red {
+    position: absolute;
+    background-color: #FB674A;
+    width: 100vw;
+    height: 120vh;
+    top: 101%;
+    border-radius: 35px;
+    box-shadow: 0px -1px 7px #FB674A;
+    transition: top 0.5s;
+}
+
+.closeSection {
+    width: 100vw;
+    text-align: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.closeSection p {
+    margin: 0;
+    padding-top: 5px;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 5.5px;
+
+}
+
+.arrow {
+    transition: opacity 0.5s;
+    opacity: 1;
+}
+
+
+
+.lshape {
+    margin-top: 10%;
+    width: 90vw;
+    height: 20vh;
+    margin-left: 5vw;
+    position: relative;
+}
+.color {
+    background-color: #CCCC30;
+}
+.horizontal {
+    display: inline-block;
+    width: 100%;
+    height: 50%;
+    top: 50%;
+    position: absolute;
+}
+
+.vertical {
+    display: inline-block;
+    height: 100%;
+    width: 50%;
+    position: absolute;
+}

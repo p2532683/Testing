@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startpage</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="variables.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body id="body" class="default">
+    <div class="sidenav" id="sidenav">
+      <div>
+        <a href="#Home" id="page1slideButton">Home</a>
+        <a href="#About" id="page2slideButton">About</a>
+        <a href="#Gallery" id="page3slideButton">Gallery</a>
+        <a href="#Blog" id="page4slideButton">Blog</a>
+        <a href="#Contact" id="page5slideButton">Contact</a>
+      </div>
+      <div class="themeSelector">
+        <label>Theme:</label><br>
+        <select id="ThemeSelect">
+          <option value="default">Default</option>
+          <option value="contrast">Contrast</option>
+        </select>
+      </div>
+    </div>
+    <div id="pullmenu">
+        <div class="open" id="open">></div>
+    </div>
+
+    <section class="overlay" id="overlay">
+      <i class="overlayClose">X</i>
+      <div id="overlayClose"></div>
+        <div class="overlayContent">
+          <img src="4.JPG" id="overlayimage">
+          <div id="overlayText"></div>
+        </div>
+    </section>   
+    <div class="leftSide">
+        <div class="sliderLeftTrack">
+            <div id="slideContainer" class="sliderContainer">
+                <div id="page5Left" class="page5 slideImage">
+                  <img  class="leftSlideImage3" src="Content/Sven-3.jpg">
+                </div>
+                <div id="page4Left" class="page4 slideImage">
+                  <img  class="leftSlideImage3" src="Content/Sven.jpg">
+                </div>
+                <div id="page3Left" class="page3 slideImage"> 
+                  <img class="leftSlideImage3" src="Content/BlueSven.jpg">    
+                </div>
+                
+                <div id="page2Left" class="page2 slideImage">
+                    <img  class="leftSlideImage3" src="3.jpg">
+                </div> 
+                <div id="page1Left" class="page1 slideImage">
+                  <img src="arvuti.jpg">
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="rightSide">
+        <div class="sliderRightTrack">
+            <div id="sliderContainerRight" class="sliderContainerRight">
+                <div id="page1Right" class="page1Right slideImage">
+                    <div class="gridPage1Right"></div>
+                    <div class="gridPage1Right titleAnimation">
+                        <h1 class="titleMobile1">Areng</h1>
+                    </div>
+                    <div class="gridPage1Right titleAnimation2">
+                        <h1 class="titleRight">Media Group</h1>
+                    </div>
+                    <div class="gridPage1Right"></div>
+                    <div class="gridPage1Right"></div>
+                    <div class="gridPage1Right"></div>
+                    <div class="gridPage1Right">
+                        <ul class="listcontainer">
+                            <li class="listItems">
+                                <a class="titleSocial1 "><img src="Content\Facebook.png"></a>
+                            </li>
+                            <li class="listItems">
+                                <a class="titleSocial2 "><img src="Content\Instagram.png"></a>
+                            </li>
+                            <li class="listItems">
+                                <a class="titleSocial1 "><img src="Content\Twitter.png"></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="gridPage1Right"></div>
+                    
+
+                </div>
+                <div id="page2Right" class="page2Right slideImage">
+                    <section id="aboutBody" class="aboutBody">
+                        <header class="aboutHeader">
+                            <h1 class="headerText">ABOUT</h1>
+                        </header>
+                        <section class="aboutVideo">
+                          <video muted autoplay loop>
+                            <source src="Content/AboutVideo_240.mp4" type="video/mp4" media="all and (max-width:240px)">
+                            <source src="Content/AboutVideo_480.mp4" type="video/mp4" media="all and (max-width:400px)">
+                            <source src="Content/AboutVideo_720.mp4" type="video/mp4" media="all and (max-width:600px)">
+                            <source src="Content/AboutVideo_Full.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                          </video>
+                        </section>
+                        <section class="aboutText">
+                            <div class="aboutTopText">
+                                <h1 class="wwaHeader">What we do</h></h1>
+                                <div class="line"></div>
+                                <p class="Shorten">Here at Areng Media Group, we make sure every project is a piece of art. Instead of using a paint brush, we use cameras and microphones. We are a one-stop-shop business to fulfil your need for all types of media creation. Continue reading and learn all the possible services we supply</p>
+                            </div>
+                            <div class="aboutBottomText">
+                                <div class="aboutBottomTextHeader">
+                                    <h1><b>Who<br> We <br> Are</b></h1>
+                                    <div class="aboutbotIMGcontainer">
+                                    </div>
+                                </div>
+                                <div class="line"></div>
+                                <p class="Shorten">Areng Media Group is a media production company, which specializes within photography, videography and post-production. Working together with clients to bring their ideas and projects to life. Creatively and skilfully working with specialized equipment and software’s to ensure the greatest level of quality</p>
+                            </div>
+                        </section>
+                    </section>
+                </div>
+
+                <div id="page3Right" class="page3Right slideImage">
+                    <section id="galleryBody" class="sectionBody">
+                        <header class="aboutHeader">
+                            <h1 class="headerText">Gallery</h1>
+                        </header>     
+                        <div class="selSlide">
+                            <span>Order Type:</span>
+                            <select id="options" >
+                                <option value="white">In order</option>
+                                <option value="random">Random</option>
+                            </select>
+                        </div>        
+                        <section class="slideshow">
+                                <picture>
+                                  <source media="(max-width: 600px)" srcset="Content/slide/1_sm.jpg" />
+                                  <img src="Content/slide/1.jpg" alt="A badger" />
+                                </picture>
+                                <picture>
+                                  <source media="(max-width: 600px)" srcset="Content/slide/2_sm.jpg" />
+                                  <img src="Content/slide/2.jpg" alt="A badger" />
+                                </picture>
+                                <picture>
+                                  <source media="(max-width: 600px)" srcset="Content/slide/3_sm.jpg" />
+                                  <img src="Content/slide/3.jpg" alt="A badger" />
+                                </picture>
+                                <picture>
+                                  <source media="(max-width: 600px)" srcset="Content/slide/4_sm.jpg" />
+                                  <img src="Content/slide/4.jpg" alt="A badger" />
+                                </picture>
+
+
+                                <div class="navButton" id="leftButton"><</div>
+                                <div class="navButton" id="rightButton">></div>                     
+                        </section>
+                        <div class="info-boxes">
+                            <div class="image-title"><span id="imgTitle">Picture of a Cute Dog</span></div>
+                            <div class="image-date"><span id="imgDate">1 Jan 2020</span></div>
+                           <div class="like"><span id="imgLike">32 <span id='likeCounter' class='nlike'> &#10084;</span></span></div>  
+                         </div>
+                         <section class="gallery">
+                            <div id="sortingButtons">
+                             <span>Sort by:</span><br>
+                             <div id="s-Buttons">
+                               <button class="btn active" onclick="sortContent()" id="all"> Show all</button>
+                                <button class="btn" onclick="sortContent()" id="nature"> Nature</button>
+                                <button class="btn" onclick="sortContent()" id="cars"> Cars</button> 
+                              </div>
+                            </div><br>
+                              <div class="galleryFlex ">
+                                <div class="column all nature">
+                                  <div class="content">
+                                    <img src="Content/slide/1.jpg" alt="Mountains" style="width:100%">
+                                    <h4>Mountains</h4>
+                                    <p>Lorem ipsum dolor..</p>
+                                  </div>
+                                </div>
+
+                                <div class="column all nature">
+                                  <div class="content">
+                                    <img src="Content/slide/2.jpg" alt="Lights" style="width:100%">
+                                    <h4>Lights</h4>
+                                    <p>Lorem ipsum dolor..</p>
+                                  </div>
+                                </div>
+
+                                <div class="column all cars">
+                                  <div class="content">
+                                    <img src="Content/slide/3.jpg" alt="Nature" style="width:100%">
+                                    <h4>Forest</h4>
+                                    <p>Lorem ipsum dolor..</p>
+                                  </div>
+                                </div>
+                              
+                                <div class="column all cars">
+                                  <div class="content">
+                                    <img src="Content/slide/4.jpg" alt="Car" style="width:100%">
+                                    <h4>Retro</h4>
+                                    <p>Lorem ipsum dolor..</p>
+                                  </div>
+                                </div>
+                                <div class="column all cars">
+                                    <div class="content">
+                                      <img src="Content/slide/4.jpg" alt="Car" style="width:100%">
+                                      <h4>Retro</h4>
+                                      <p>Lorem ipsum dolor..</p>
+                                    </div>
+                                  </div>
+                                  <div class="column all cars">
+                                    <div class="content">
+                                      <img src="Content/slide/4.jpg" alt="Car" style="width:100%">
+                                      <h4>Retro</h4>
+                                      <p>Lorem ipsum dolor..</p>
+                                    </div>
+                                  </div>
+                                  <div class="column all cars">
+                                    <div class="content">
+                                      <img src="Content/slide/4.jpg" alt="Car" style="width:100%">
+                                      <h4>Retro</h4>
+                                      <p>Lorem ipsum dolor..</p>
+                                    </div>
+                                  </div>
+                                  <div class="column all cars">
+                                    <div class="content">
+                                      <img src="Content/slide/4.jpg" alt="Car" style="width:100%">
+                                      <h4>Retro</h4>
+                                      <p>Lorem ipsum dolor..</p>
+                                    </div>
+                                  </div>
+                                  <div class="column all cars">
+                                    <div class="content">
+                                      <img src="Content/slide/4.jpg" alt="Car" style="width:100%">
+                                      <h4>Retro</h4>
+                                      <p>Lorem ipsum dolor..</p>
+                                    </div>
+                                  </div>
+                                  <div class="column all cars">
+                                    <div class="content">
+                                      <img src="Content/slide/4.jpg" alt="Car" style="width:100%">
+                                      <h4>Retro</h4>
+                                      <p>Lorem ipsum dolor..</p>
+                                    </div>
+                                  </div>
+                                  <div class="column all cars">
+                                    <div class="content">
+                                      <img src="Content/slide/4.jpg" alt="Car" style="width:100%">
+                                      <h4>Retro</h4>
+                                      <p>Lorem ipsum dolor..</p>
+                                    </div>
+                                  </div>
+                                  <div class="column all cars">
+                                    <div class="content">
+                                      <img src="Content/slide/4.jpg" alt="Car" style="width:100%">
+                                      <h4>Retro</h4>
+                                      <p>Lorem ipsum dolor..</p>
+                                    </div>
+                                  </div>
+
+                            </div>
+                         </section>
+
+                    </section>
+                </div>
+
+                <div id="page4Right" class="page4Right slideImage">
+                  <header class="aboutHeader">
+                    <h1 class="headerText">Blog</h1>
+                </header> 
+                <section>
+                  <!--https://www.davidmacd.com/blog/alternate-text-for-css-background-images.html-->
+                  <div class="blogsContainer">
+                    <div class="blogBox" id="b1">
+                      <div class="detect"></div>
+                      <div class="blogImage"><img src="Content/blog/building.jpg "></div>
+                      <div class="blogText">
+                        <h1>Community Update: 08/21</h1>
+                        <p>Hi All, here is a little update about some of the new stuff that has been happening in the office ...</p>
+                      </div>
+                    </div>
+                    <div class="blogBox" id="b2">
+                      <div class="detect"></div>
+                      <div class="blogImage"><img src="Content/blog/woman.jpg"></div>
+                      <div class="blogText">
+                        <h1>How social media marketing has changed in 2022</h1>
+                        <p>If you want to crowdfund your latest project or get your e-commerce business off the ground ...</p>
+                      </div>
+                    </div>
+                    <div class="blogBox " id="b3">
+                      <div class="detect"></div>
+                      <div class="blogImage"><img src="Content/blog/logo.jpeg" stlye="object-position: center;"></div>
+                      <div class="blogText">
+                        <h1>What the future Holds?</h1>
+                        <p>Areng media group is going through some changes...</p>
+                      </div>
+                    </div>
+                    <div class="blogBox" id="b4">
+                      <div class="detect"></div>
+                      <div class="blogImage"><img src="Content/blog/ucc.png"></div>
+                      <div class="blogText">
+                        <h1>UnderConstruction</h1>
+                        <p>Lots of things are still under contstruction...</p>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                
+
+
+                </div>
+
+
+                <div id="page5Right" class="page5Right slideImage">
+                  <div class="contactText">
+                    <h1>Get in Touch</h1>
+                    <p>We’re happy to hear from you. Contact us today to learn more about our business and how you can benefit from working with us.</p>
+                    <span>Tallinn, Estonia</span>
+                    <span>+372 56265XXX</span>
+                    <div class="line contactLine"></div>
+                  </div>
+                  
+                    <div class="form">
+                    <form id="form1" target="/thankyou.html">
+                        <label for="name">Name:<span class="required">*</span></label>
+                        <input type="text" id="name" class="formlabels" name="name" value="" placeholder="your name" required><br>
+                        
+                        <label for="email">Email:<span class="required">*</span></label>
+                        <input type="text" id="email"  class="formlabels"name="email" value="" placeholder="your email" required><br>
+                        
+                        <label for="lang">Language:</label>
+                        <select name="lang" id="lang" form="Language" required class="formlabels">
+                            <option value="English">English</option>
+                            <option value="Russian">Russian</option>
+                        </select><br>
+                        <label for="about">About:<span class="required">*</span></label>
+                        <input type="text" id="about" placeholder="Say hi!" class="formlabels" name="about" required><br>
+                        <input type="submit" value="Submit" id="addUserFeedbackButton" class="formlabels"></input>
+                    </form>
+                    <div id="thankyou">
+                        <p><b>Thank you</b> for your message. We will get to it as soon as possible</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+    <script>
+      /* Scripts for Side menu and selecting theme */
+
+
+      //Side menu opening
+        let open = 0;//state of side menu (open or closed)
+        openNav = () => {
+            if(open == 0){ //if side menu is closed
+             document.getElementById("sidenav").style.width = "250px";  
+             document.getElementById("pullmenu").style.width = "270px"; //opening arrow background
+             document.getElementById("open").style.left = "260px"; //opening arrow
+             
+             open = 1;
+            } else { //if side menu is open
+                document.getElementById("sidenav").style.width = "0"; 
+                document.getElementById("open").style.left = "0";
+                document.getElementById("pullmenu").style.width = "10px";
+                open = 0;
+            }
+        }
+        let page1Right = document.getElementById("page1Right");
+        let page2Right = document.getElementById("page2Right");
+        let page3Right = document.getElementById("page3Right");
+        let galleryBody = document.getElementById("galleryBody").scrollTop = 0;
+        let page4Right = document.getElementById("page4Right");
+        let page5Right = document.getElementById("page5Right");
+
+        /*
+        Moving between different pages 
+        
+        slideContainer is left side with images
+        slideContainerRight is right side with content
+
+        left side in reverse. Page 5 == 0%; page 1 == 400%;
+        */
+        slide = (evt) =>{
+            console.log(evt.target.id);
+            setTimeout(()=>{
+                if(evt.target.id == "page1slideButton"){
+                document.getElementById("slideContainer").style.bottom = "400%";
+                document.getElementById("sliderContainerRight").style.bottom = "0%"; 
+            }
+            if(evt.target.id == "page2slideButton"){
+                document.getElementById("slideContainer").style.bottom = "300%";
+                document.getElementById("sliderContainerRight").style.bottom = "100%"; 
+            }
+            if(evt.target.id == "page3slideButton"){
+                document.getElementById("slideContainer").style.bottom = "200%";
+                document.getElementById("sliderContainerRight").style.bottom = "200%"; 
+            }
+            if(evt.target.id == "page4slideButton"){
+                document.getElementById("slideContainer").style.bottom = "100%";
+                document.getElementById("sliderContainerRight").style.bottom = "300%"; 
+            }
+            if(evt.target.id == "page5slideButton"){
+                document.getElementById("slideContainer").style.bottom = "0%";
+                document.getElementById("sliderContainerRight").style.bottom = "400%"; 
+            } 
+            }, 1);
+            
+            
+        }
+        document.getElementById("page1slideButton").addEventListener("click", slide);
+        document.getElementById("page2slideButton").addEventListener("click", slide);
+        document.getElementById("page3slideButton").addEventListener("click", slide);
+        document.getElementById("page4slideButton").addEventListener("click", slide);
+        document.getElementById("page5slideButton").addEventListener("click", slide);
+        document.getElementById("open").addEventListener("click", openNav);
+        
+
+        /* Selecting themes    */ ;
+        let bodys = document.body;
+
+        changeTheme =()=>{
+          let value =  document.getElementById("ThemeSelect").value;
+          console.log(value);
+          if (value == "contrast"){
+            document.getElementById("body").classList.replace("default", "highContrast");
+            localStorage.setItem("theme", "highContrast");
+            console.log("add")
+          } else {
+            document.getElementById("body").classList.replace("highContrast", "default");
+            localStorage.setItem("theme", "default");
+          }
+        }
+        
+        checkTheme = ()=>{
+          if(localStorage.theme == "highContrast"){
+            console.log("localStorage load theme");
+            document.getElementById("body").classList.replace("default", "highContrast");
+            document.getElementById("ThemeSelect").selected = "contrast";
+          }
+        }
+        checkTheme();
+        document.getElementById("ThemeSelect").addEventListener("click", changeTheme);
+
+
+
+
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/pouchdb@7.2.1/dist/pouchdb.min.js"></script>
+    <script>
+          //database for people contacting.
+          let db = new PouchDB("usersData");
+          function addUserFeedback(event) {
+            let theDate = new Date().toISOString(); //using date so no id is the same
+           //Collecting the user data
+            let user = {
+              _id: theDate,
+              name: document.getElementById("name").value,
+              email: document.getElementById("email").value,
+              lang:  document.getElementById("lang").value,
+              about:  document.getElementById("about").value
+            };
+    
+            db.put(user); //saving the user data to database
+            //Locking the contact pages so users can not spam database requests.
+            let hide = setTimeout(()=>{
+            document.getElementById("name").disabled = true;
+            document.getElementById("email").disabled = true;
+            document.getElementById("lang").disabled = true;
+            document.getElementById("about").disabled = true;
+            document.getElementById("addUserFeedbackButton").style.display = "none";
+            document.getElementById("thankyou").style.display = "block";
+            },50);
+          }
+          
+          //Form Checker using in built form checking. 
+          checkform  = (event) => {
+                if(document.getElementById("form1").checkValidity() == true){ //if form is valid
+                    console.log("working");
+                    addUserFeedback(); //run the addUserFeedback() to collect and save the user settings
+                    event.preventDefault(); //Stop the page from refreshing.
+                    window.open("/thankyou.html")
+                } else {
+                    console.log("broken");
+                }
+          }
+          document.getElementById("addUserFeedbackButton").addEventListener("click", checkform);
+    </script>
+    <script>
+      //setting up the slideshow
+        let currentSlide = 0;
+        //finding all images in the slideshow
+        let slides = document.querySelectorAll(".slideshow img");
+        let imgLikes = [0, 1, 4, 30, 15, 234, 124, 64, ,15, 15,1561, 561];
+        let imgName = [0, 1, 4, 30, 15, 234, 124, 64, ,15, 15,1561, 561];
+        let imgDate = [0, 1, 4, 30, 1, 234, 124, 6, ,15, 15, 1561, 64];
+
+
+
+        //making a referece to button for easer access later on
+        let slideType = document.getElementById("options");
+
+
+        //When presses next slide
+        nextSlide = () => {
+          //increase the current slide index
+          currentSlide++;
+          //checking if currentSlide is larger the the amount of imagse
+          if (currentSlide >= slides.length){
+              currentSlide = 0; //if longer set back to original
+          }
+          //checking if user wants the images in order or in random
+          if (options.value == "random"){
+            // generate a random number
+            let i = Math.random();
+                console.log(i + "i");
+
+                let b = i * slides.length;
+                console.log(b);
+                currentSlide = Math.floor(b);
+                console.log(currentSlide + "b");
+            }
+          console.log(currentSlide);
+          showSlide();
+        };
+      
+        prevSlide = () => {
+          currentSlide--;
+            if (currentSlide == -1){
+                currentSlide = slides.length - 1;
+            }
+            if (options.value == "random"){
+                let i = Math.random();
+                console.log(i + "i");
+                let b = i * 4;
+                console.log(b);
+                currentSlide = Math.floor(b);
+                console.log(currentSlide + "b");
+            }
+            console.log(currentSlide);
+          showSlide();
+        };
+      
+        showSlide = () => {
+          for (let i = 0; i < slides.length; i++) {
+            slides[i].style.opacity = 0;
+            slides[i].style.display = "none";
+          }
+          slides[currentSlide].style.opacity = 1;
+          slides[currentSlide].style.display = "block";
+          document.getElementById("imgTitle").innerHTML = imgName[currentSlide];
+          document.getElementById("imgDate").innerHTML = imgDate[currentSlide];
+          document.getElementById("imgLike").innerHTML = imgLikes[currentSlide] + "<span id='likeCounter' class='nlike'> &#10084;</span>";
+        };
+            
+        
+        let likecurrent = document.getElementById("likeCounter");
+
+           liketoggle = () => {
+ /*           if (localStorage.imgUserLike){
+              imgUserLike = JSON.parse(localStorage.imgUserLike);
+            };*/
+            if (imgUserLike[currentSlide] == false){
+
+              imgLikes[currentSlide]++;
+              document.getElementById("imgLike").innerHTML = imgLikes[currentSlide] + "<span id='likeCounter' class='ylike'> &#10084;</span>";
+              imgUserLike[currentSlide] = true;
+            } else {
+              imgLikes[currentSlide]--;
+              document.getElementById("imgLike").innerHTML = imgLikes[currentSlide] + "<span id='likeCounter' class='nlike'> &#10084;</span>";
+              imgUserLike[currentSlide] = false;
+            }
+            localStorage.imgUserLike = JSON.stringify(imgUserLike);
+           }
+           
+
+           slideShowFirstLoad = () => {
+            if (localStorage.imgUserLike){
+              console.log("load local")
+              imgUserLike = JSON.parse(localStorage.imgUserLike);
+            } else {
+              let imgUserLike = [false,false,false,false,false,false,false,false,false,false,false,];
+              localStorage.setItem("imgUserLike", JSON.stringify(imgUserLike));
+            }
+            showSlide();
+            if (imgUserLike[currentSlide] == true){
+              imgLikes[currentSlide]++;
+              document.getElementById("imgLike").innerHTML = imgLikes[currentSlide] + "<span id='likeCounter' class='ylike'> &#10084;</span>";
+           } 
+          }
+           slideShowFirstLoad();
+           
+
+
+        document.getElementById("likeCounter").addEventListener("click", liketoggle);
+        document.getElementById("imgLike").addEventListener("click", liketoggle);
+        document.getElementById("leftButton").addEventListener("click", prevSlide);
+        document.getElementById("rightButton").addEventListener("click", nextSlide);
+    </script>
+    <script>
+        changeActive = () => {
+          let actList = document.querySelectorAll(".btn");
+            actList.forEach(activelist => {
+             activelist.classList.remove("active");
+        })};
+
+        sortContent = (evt) => {
+            let x = event.target.id;
+            changeActive();
+            event.target.classList.add("active")
+            console.log(x);
+            if(x == "all") {
+                let nodeList = document.querySelectorAll(".all");
+                console.log(nodeList);
+                for (let i = 0; i < nodeList.length; i++) {
+                console.log(nodeList[i]);
+                nodeList[i].style.display = "block";
+}
+            } else if(x == "cars") {
+                let nodeList = document.querySelectorAll(".cars");
+                for (let i = 0; i < nodeList.length; i++) {
+                nodeList[i].style.display = "none";
+            }
+        }
+    };
+    </script>
+    <script>
+      let overlayText = document.getElementById("OverlayText");
+      let overlayImagesSrc = ["Content/slide/1.jpg", "Content/slide/2.jpg", "Content/slide/3.jpg", "Content/slide/4.jpg"];
+      let overlayTextHTML = [
+        //Blog One
+        "<p>tell me something your mother doesnt know</p><br><p>ooooooaaahhhhh1</p> <iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1064453.9269227968!2d24.490753754352895!3d58.595326028575805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469294a0879ba859%3A0x2613698de05650b5!2sPostimees!5e0!3m2!1sen!2suk!4v1651974868206!5m2!1sen!2suk' width='600' height='450' style='border:0;'' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>", 
+        // Blog 2
+        "<p>tell me something your mother doesnt know<p><br><p>ooooooaaahhhhh2</p>", 
+
+        "<p>tell me something your mother doesnt know<p><br><p>ooooooaaahhhhh3</p>",
+        "<iframe id='inlineFrameExample'title='Inline Frame Example' width='300'height='200' src='https://thegadgetflow.com/blog/how-social-media-marketing-has-changed-in2022/'></iframe>"
+      ];
+
+      openBlog = (evt) =>{
+        console.log(event.target.id);
+        let onlyNumber = event.target.id.replace(/\D/g, '') -1;
+        console.log(onlyNumber);
+        document.getElementById("overlay").style.display = "block";
+        document.getElementById("overlay").style.opacity = "1";
+        document.getElementById("overlayimage").src = overlayImagesSrc[onlyNumber];
+        document.getElementById("overlayText").innerHTML = overlayTextHTML[onlyNumber];
+        console.log(overlayTextHTML[onlyNumber])
+        if(typeof overlayTextHTML[onlyNumber] == 'undefined') {
+          document.getElementById("overlayText").innerHTML = "<h1>Sorry Couldn`t load the Content</h1>";
+        }
+      }
+      closeBlog = () =>{
+        document.getElementById("overlay").style.display = "none";
+        document.getElementById("overlayText").innerHTML = "";
+      }
+      document.getElementById("overlayClose").addEventListener("click", closeBlog);
+      addBlogListeners = () => {
+        var blog = document.getElementsByClassName("detect"); 
+        for (n=0, length = blog.length; n < length; n++) {
+            blog[n].id = "blog_" + (n + 1);
+            blog[n].addEventListener("click", openBlog); 
+        }
+      }; 
+
+    addBlogListeners()
+    </script>
+    <script>
+      // Making paragraphs Shorter
+      var shorten = document.getElementsByClassName("Shorten"); //Finding all the paragraphs which have been chosen to be shortened
+      // Creating arrays where data can be saved
+      let ShortTextBeginning = [];
+      let ShortTextEnd = [];
+      let ShortTextOpen = [];
+      //Function that searches each item of the varible "shorten" for the amount of characters in paragraph
+      parLenght = () => {
+        for (n=0, length = shorten.length; n < length; n++) { //loop that goes through each item 
+          console.log(shorten[n]);
+          let text = shorten[n]; //save the array with index number to a varible to make it easier to refer to later.
+          console.log(text.innerHTML.length);
+          ShortTextOpen[n] = "false"; //set the state, if paragraph has been extended or not. This helps to keep in track for later, when the user asks to either increase or decrease the size of the paragraph.
+          let shortTextId = "short_" + n;
+            text.id = shortTextId; //giving each item in the loop an id, so it could be refered to later.
+           
+
+          if(text.innerHTML.length > 100){ //if the paragraph is longer than a 100 characters, the code will run to decrease the size of the paragraph
+            console.log("too long");
+            ShortTextBeginning[n] = text.innerHTML.substring(0, 100); //save first 100 character to the array
+            ShortTextEnd[n] = text.innerHTML.substring(100, text.innerHTML.length); //save all the rest of the character after the 100th character to an array
+            console.log(shortTextId + " " + ShortTextBeginning[n]);
+            console.log(shortTextId + " "+ ShortTextEnd[n]);
+            let ShortText = ShortTextBeginning[n] + " ...<a OnClick='moreText()' id="+ "shortButton" + n + ">more</a>"; //inject a button into the text, with eventlistener. this later allows to see later, which paragraph the user is trying to increase.
+            text.innerHTML = ShortText; //Making the text, the length of 100 characters + the button.
+          }
+        }
+      }
+
+      moreText = (evt) => { // Changing text length
+        let onlyNumber = parseInt(event.target.id.replace(/\D/g, ''));//get the event id. However we only want the number so we can use it as a index to refer back to the data in the arrays
+        console.log(onlyNumber);
+        //varibles to make it easier to refer to later in the code
+        let start = ShortTextBeginning[onlyNumber];
+        let end = ShortTextEnd[onlyNumber];
+        console.log(start);
+        console.log(end);
+
+        if(ShortTextOpen[onlyNumber] == "false"){ //if the paragraph is false for open, this code will run.
+        document.getElementById("short_" + onlyNumber).innerHTML = start + end + " ...<a OnClick='moreText()' id=" + "shortButtonClose" + onlyNumber + ">less</a>"; //select the correct paragraph and increase the size of the paragraph
+        ShortTextOpen[onlyNumber] = "true"; //set the paragraph open state to true.
+      } else if (ShortTextOpen[onlyNumber] == "true") { //if the paragraph is open this code will run.
+        document.getElementById("short_" + onlyNumber).innerHTML = start + " ...<a OnClick='moreText()' id=" + "shortButton" + onlyNumber + ">more</a>"; //decrease the size to the first 100 characters + the more button
+        ShortTextOpen[onlyNumber] = "false"; //set paragraph open phase to false.
+      }
+    }
+      setTimeout(parLenght, 500);//when code is loaded run the parLength() in half a secound. 
+    </script>
+</body>
+</html>

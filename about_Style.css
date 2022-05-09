@@ -1,0 +1,77 @@
+.aboutBody {
+  background-color: var(--background);
+  overflow-y: visible;
+}
+.aboutHeader {
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--font-color2);
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.headerText {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  font-weight: bold;
+  font-size: 1.3em;
+  letter-spacing: 5.5px;
+}
+.aboutHeader i {
+  margin-right: 5px;
+  font-size: 2.5em;
+  font-style: normal;
+  transform: rotatez(-90deg);
+}
+
+.aboutVideo video {
+  margin-left: 5%;
+  width: 90%;
+  height: auto;
+}
+.aboutText {
+  margin-top: 20px;
+  width: 80%;
+  margin-left: 10%;
+}
+.aboutTopText {
+  background-color: var(--backgroundText);
+  padding: 4%;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.aboutTopText h1 {
+  font-size: 2.2em;
+  padding: 0;
+  margin: 0;
+}
+.aboutBottomText {
+    color: white;
+}
+
+.aboutBottomTextHeader {
+  margin-top: 25px;
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.aboutBottomTextHeader img {
+  object-fit: cover;
+  width: 133px;
+  height: 133px;
+
+  padding: 8.25px
+
+}
+.aboutBottomTextHeader h1 {
+  font-size: 2.3em;
+  word-spacing: 150px;
+  margin: 0;
+  padding: 4% 0 0 4%;
+  background-color: var(--backgroundText);
+}
+.aboutBottomText p {
+  margin: 0;
+  padding: 4%;
+  background-color: var(--backgroundText);
+}
